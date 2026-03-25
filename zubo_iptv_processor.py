@@ -4,16 +4,17 @@ import time
 from collections import defaultdict
 from datetime import datetime
 import concurrent.futures
-import socket
 
-# 配置参数
+# ========== 增强配置 ==========
 SOURCE_URL = "https://raw.githubusercontent.com/gclgg/zubo/refs/heads/main/IPTV.txt"
 OUTPUT_FILE = "zubo_iptv_sorted.m3u"
-MAX_WORKERS = 20  # 并发检测线程数
-TIMEOUT = 5  # 连接超时时间（秒）
+MAX_WORKERS = 15                # 并发数，不宜过高
+CONNECT_TIMEOUT = 8             # 连接超时(秒)
+STABILITY_TEST_DURATION = 5     # 稳定性测试时长(秒) - 模拟真实播放5秒
+MIN_SPEED_KBPS = 500            # 最低要求速度(KB/s)
+# =============================
 
 def fetch_source():
-    """拉取源文件"""
     print(f"📡 正在拉取源: {SOURCE_URL}")
     try:
         response = requests.get(SOURCE_URL, timeout=30)
@@ -29,7 +30,6 @@ def fetch_source():
         return None
 
 def parse_content(content):
-    """解析IPTV.txt内容，按频道名分组"""
     channels = defaultdict(list)
     current_group = "未分组"
     lines = content.strip().split('\n')
@@ -38,19 +38,13 @@ def parse_content(content):
         line = line.strip()
         if not line:
             continue
-        
-        # 处理分组行
         if '#genre#' in line:
             current_group = line.split(',')[0].strip()
             continue
-        
-        # 处理频道行
         if ',' in line:
             parts = line.split(',', 1)
             channel_name = parts[0].strip()
             url = parts[1].strip()
-            
-            # 提取纯净URL（去掉$后面的参数）
             clean_url = re.sub(r'\$.*$', '', url)
             
             channels[channel_name].append({
@@ -59,134 +53,118 @@ def parse_content(content):
                 'clean_url': clean_url,
                 'group': current_group
             })
-    
     print(f"📊 解析完成，共 {len(channels)} 个频道，{sum(len(v) for v in channels.values())} 个源")
     return channels
 
-def check_url_quality(url):
-    """检测URL的质量（响应时间）"""
+def stability_test(url):
+    """
+    模拟真实播放的稳定性测试
+    返回: (是否稳定, 质量分, 平均速度KB/s)
+    """
+    test_start = time.time()
+    total_bytes = 0
+    chunk_count = 0
+    
     try:
-        start_time = time.time()
-        # 使用HEAD请求快速检测
-        response = requests.head(url, timeout=TIMEOUT, allow_redirects=True)
-        elapsed = int((time.time() - start_time) * 1000)  # 毫秒
+        # 使用流式下载，模拟播放器行为
+        response = requests.get(url, timeout=CONNECT_TIMEOUT, stream=True)
+        if response.status_code != 200:
+            return False, 0, 0
         
-        if response.status_code == 200:
-            # 质量分 = 1000 - 响应时间(ms)，响应越快分越高
-            quality_score = max(0, 1000 - elapsed)
-            return {
-                'valid': True,
-                'quality_score': quality_score,
-                'response_time': elapsed,
-                'status': response.status_code
-            }
+        # 持续读取数据，模拟播放 STABILITY_TEST_DURATION 秒
+        for chunk in response.iter_content(chunk_size=8192):
+            if chunk:
+                total_bytes += len(chunk)
+                chunk_count += 1
+                # 如果已测试足够时间，退出
+                if time.time() - test_start >= STABILITY_TEST_DURATION:
+                    break
+        
+        elapsed = time.time() - test_start
+        if elapsed < 1:
+            return False, 0, 0  # 太短，无效
+        
+        avg_speed = total_bytes / elapsed / 1024  # KB/s
+        
+        # 判定标准：必须达到最低速度，且接收到的数据块足够多
+        if avg_speed >= MIN_SPEED_KBPS and chunk_count >= 5:
+            # 质量分 = 速度分 + 时间分
+            speed_score = min(500, int(avg_speed * 1.5))
+            duration_score = min(300, int(elapsed * 20))
+            quality_score = speed_score + duration_score
+            return True, quality_score, avg_speed
         else:
-            return {
-                'valid': False,
-                'quality_score': 0,
-                'response_time': None,
-                'status': response.status_code
-            }
-    except requests.exceptions.Timeout:
-        return {'valid': False, 'quality_score': 0, 'error': 'timeout'}
-    except requests.exceptions.ConnectionError:
-        return {'valid': False, 'quality_score': 0, 'error': 'connection_error'}
+            return False, 0, avg_speed
+            
     except Exception as e:
-        return {'valid': False, 'quality_score': 0, 'error': str(e)[:50]}
+        # 任何异常都视为不稳定
+        return False, 0, 0
 
 def process_channel(channel_name, sources):
-    """处理单个频道的所有源，按质量排序"""
-    print(f"正在检测: {channel_name} ({len(sources)} 个源)")
+    print(f"正在检测稳定性: {channel_name} ({len(sources)} 个源)")
     
-    results = []
+    stable_results = []
     for source in sources:
-        quality = check_url_quality(source['clean_url'])
-        if quality['valid']:
-            results.append({
+        is_stable, quality, speed = stability_test(source['clean_url'])
+        if is_stable:
+            stable_results.append({
                 'name': source['name'],
                 'url': source['url'],
-                'quality_score': quality['quality_score'],
-                'response_time': quality['response_time']
+                'quality_score': quality,
+                'speed': speed
             })
     
     # 按质量分从高到低排序
-    results.sort(key=lambda x: x['quality_score'], reverse=True)
-    
-    return channel_name, results
+    stable_results.sort(key=lambda x: x['quality_score'], reverse=True)
+    return channel_name, stable_results
 
 def generate_m3u(sorted_channels):
-    """生成最终的M3U文件"""
     current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
-        # 写入文件头
         f.write("#EXTM3U\n")
         f.write(f"# 更新时间: {current_time}\n")
         f.write(f"# 总频道数: {len(sorted_channels)}\n")
-        f.write(f"# 总源数: {sum(len(v) for v in sorted_channels.values())}\n\n")
+        f.write(f"# 总有效线路数: {sum(len(v) for v in sorted_channels.values())}\n\n")
         
-        # 按频道写入
         for channel_name, sources in sorted_channels.items():
             if not sources:
                 continue
             
             f.write(f"\n# 频道: {channel_name}\n")
             for idx, source in enumerate(sources, 1):
-                # 添加线路编号
-                if '『线路' in source['url']:
-                    # 如果已有线路标记，替换
-                    base_url = re.sub(r'『线路.*』', '', source['url'])
-                    numbered_url = f"{base_url}『线路{idx}』"
-                elif '$' in source['url']:
-                    # 如果有$参数，在$前添加线路标记
-                    base_url = source['url'].split('$')[0]
-                    params = source['url'].split('$')[1] if '$' in source['url'] else ''
-                    if params:
-                        numbered_url = f"{base_url}『线路{idx}』${params}"
-                    else:
-                        numbered_url = f"{base_url}『线路{idx}』"
-                else:
-                    # 普通URL，直接添加线路标记
-                    numbered_url = f"{source['url']}『线路{idx}』"
+                # 为每个有效线路重新编号
+                base_url = re.sub(r'\$.*$', '', source['url'])
+                numbered_url = f"{base_url}『线路{idx}』"
                 
-                # 写入EXTINF行
                 tvg_id = str(abs(hash(channel_name)) % 10000)
-                extinf = f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{channel_name}"'
-                extinf += f' group-title="IPTV源",{channel_name}'
+                # 在EXTINF中增加速度注释
+                extinf = f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{channel_name}" group-title="IPTV源",{channel_name}'
                 f.write(extinf + '\n')
-                
-                # 写入URL
                 f.write(numbered_url + '\n')
-                
-                # 可选：添加注释说明质量
-                f.write(f"# 质量分: {source['quality_score']}, 响应时间: {source['response_time']}ms\n")
+                f.write(f"# 质量分: {source['quality_score']}, 速度: {source['speed']:.1f}KB/s\n")
 
 def main():
     start_time = time.time()
     print("=" * 50)
-    print("🚀 开始处理 IPTV 源")
+    print("🚀 开始处理 IPTV 源 (增强稳定性检测)")
+    print(f"⚙️  配置: 测试时长={STABILITY_TEST_DURATION}秒, 最低速度={MIN_SPEED_KBPS}KB/s")
     print("=" * 50)
     
-    # 1. 拉取源
     content = fetch_source()
     if not content:
         return
     
-    # 2. 解析内容
     channels = parse_content(content)
-    
-    # 3. 并发检测所有频道
     sorted_channels = {}
     total_channels = len(channels)
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        # 提交所有任务
         future_to_channel = {
             executor.submit(process_channel, name, sources): name 
             for name, sources in channels.items()
         }
         
-        # 收集结果
         for i, future in enumerate(concurrent.futures.as_completed(future_to_channel), 1):
             channel_name = future_to_channel[future]
             try:
@@ -194,23 +172,22 @@ def main():
                 sorted_channels[name] = results
                 valid_count = len(results)
                 total_count = len(channels[name])
-                print(f"进度: [{i}/{total_channels}] {name} - 有效: {valid_count}/{total_count}")
+                print(f"进度: [{i}/{total_channels}] {name} - 稳定: {valid_count}/{total_count}")
             except Exception as e:
                 print(f"❌ 处理 {channel_name} 时出错: {e}")
     
-    # 4. 统计信息
     total_sources = sum(len(v) for v in channels.values())
     total_valid = sum(len(v) for v in sorted_channels.values())
     
     print("\n" + "=" * 50)
-    print("📊 统计信息")
+    print("📊 最终统计")
     print("=" * 50)
     print(f"总频道数: {total_channels}")
     print(f"总源数: {total_sources}")
-    print(f"有效源数: {total_valid}")
-    print(f"有效比例: {total_valid/total_sources*100:.1f}%")
+    print(f"稳定源数: {total_valid}")
+    if total_sources > 0:
+        print(f"稳定比例: {total_valid/total_sources*100:.1f}%")
     
-    # 5. 生成M3U文件
     generate_m3u(sorted_channels)
     
     elapsed = time.time() - start_time
