@@ -21,10 +21,10 @@ LOGO_BASE_URL = f"https://raw.githubusercontent.com/{LOGO_REPO_OWNER}/{LOGO_REPO
 
 # 频道分类排序规则
 CHANNEL_CATEGORIES = {
-    "CCTV": 1,      # CCTV系列
-    "卫视": 2,      # 卫视频道
-    "数字": 3,      # 数字频道
-    "其他": 99,     # 其他
+    "CCTV": 1,
+    "卫视": 2,
+    "数字": 3,
+    "其他": 99,
 }
 
 # CCTV频道顺序
@@ -45,7 +45,8 @@ SATELLITE_ORDER = {
     "云南卫视": 21, "吉林卫视": 22, "陕西卫视": 23, "甘肃卫视": 24,
     "青海卫视": 25, "宁夏卫视": 26, "新疆卫视": 27, "西藏卫视": 28,
     "内蒙古卫视": 29, "海南卫视": 30, "旅游卫视": 31, "卡酷少儿": 32,
-    "金鹰卡通": 33, "嘉佳卡通": 34,
+    "金鹰卡通": 33, "嘉佳卡通": 34, "凤凰卫视": 35, "凤凰卫视中文台": 36,
+    "凤凰卫视资讯台": 37, "凤凰卫视香港台": 38, "凤凰卫视电影台": 39,
 }
 
 # 数字频道顺序
@@ -54,10 +55,12 @@ DIGITAL_ORDER = {
     "生活时尚": 5, "魅力音乐": 6, "金色频道": 7, "法治天地": 8,
     "游戏风云": 9, "欢笑剧场": 10, "都市剧场": 11, "极速汽车": 12,
     "动漫秀场": 13, "劲爆体育": 14, "新视觉": 15, "茶频道": 16,
+    "CGTN": 17, "CGTN纪录片": 18, "爱上4K": 19, "4K超高清": 20,
 }
 
-# 通用Logo库
+# 完整Logo库
 COMMON_LOGOS = {
+    # ========== 央视系列 ==========
     "CCTV1": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV1.png",
     "CCTV2": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV2.png",
     "CCTV3": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV3.png",
@@ -76,6 +79,15 @@ COMMON_LOGOS = {
     "CCTV15": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV15.png",
     "CCTV16": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV16.png",
     "CCTV17": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV17.png",
+    
+    # ========== 凤凰系列 ==========
+    "凤凰卫视": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Phoenix.png",
+    "凤凰卫视中文台": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/PhoenixChinese.png",
+    "凤凰卫视资讯台": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/PhoenixInfo.png",
+    "凤凰卫视香港台": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/PhoenixHK.png",
+    "凤凰卫视电影台": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/PhoenixMovies.png",
+    
+    # ========== 卫视频道 ==========
     "湖南卫视": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Hunan.png",
     "浙江卫视": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Zhejiang.png",
     "江苏卫视": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Jiangsu.png",
@@ -110,12 +122,30 @@ COMMON_LOGOS = {
     "卡酷少儿": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Kaku.png",
     "金鹰卡通": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Jinying.png",
     "嘉佳卡通": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Jiajia.png",
+    
+    # ========== 数字频道 ==========
     "求索纪录": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Discovery.png",
     "求索科学": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/DiscoveryScience.png",
     "求索动物": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/DiscoveryAnimal.png",
     "全纪实": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Documentary.png",
     "生活时尚": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Lifestyle.png",
+    "魅力音乐": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Music.png",
+    "金色频道": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Golden.png",
+    "法治天地": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Law.png",
+    "游戏风云": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Game.png",
+    "欢笑剧场": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Comedy.png",
+    "都市剧场": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/City.png",
+    "极速汽车": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Car.png",
+    "动漫秀场": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Anime.png",
+    "劲爆体育": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Sports.png",
+    "新视觉": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/NewVision.png",
+    "茶频道": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Tea.png",
+    "CGTN": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTN.png",
+    "CGTN纪录片": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CGTNDoc.png",
+    "爱上4K": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/4K.png",
+    "4K超高清": "https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/4K.png",
 }
+
 # =============================
 
 def get_channel_category(channel_name):
@@ -146,12 +176,23 @@ def get_channel_sort_key(channel_name):
     return (category_order, order, channel_name)
 
 def get_logo_url(channel_name):
-    """获取频道Logo URL"""
-    # 优先使用通用Logo库
+    """获取频道Logo URL，支持精确匹配和模糊匹配"""
+    # 精确匹配
     if channel_name in COMMON_LOGOS:
         return COMMON_LOGOS[channel_name]
-    # 尝试从你的仓库获取
-    return f"{LOGO_BASE_URL}/{channel_name}.png"
+    
+    # 模糊匹配：尝试去除空格、特殊字符后匹配
+    clean_name = channel_name.replace(" ", "").replace("-", "")
+    for name, url in COMMON_LOGOS.items():
+        if clean_name == name.replace(" ", "").replace("-", ""):
+            return url
+    
+    # 尝试匹配前缀
+    for name, url in COMMON_LOGOS.items():
+        if channel_name.startswith(name) or name.startswith(channel_name):
+            return url
+    
+    return ""
 
 def fetch_source():
     print(f"📡 正在拉取源: {SOURCE_URL}")
@@ -189,6 +230,7 @@ def parse_content(content):
             # 标准化频道名称
             if channel_name.startswith("CCTV-"):
                 channel_name = channel_name.replace("CCTV-", "CCTV")
+            channel_name = channel_name.strip()
             
             channels[channel_name].append({
                 'name': channel_name,
@@ -377,7 +419,7 @@ def main():
     elapsed = time.time() - start_time
     print(f"\n✅ 处理完成！耗时: {elapsed:.1f} 秒")
     print(f"📁 输出文件: {OUTPUT_FILE}")
-    print(f"\n📺 频道排序规则: CCTV(1-17) → 卫视 → 数字频道 → 其他")
+    print(f"\n📺 频道排序规则: 央视频道(1-17) → 卫视频道 → 数字频道 → 其他频道")
 
 if __name__ == "__main__":
     main()
