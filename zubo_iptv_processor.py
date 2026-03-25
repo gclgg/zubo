@@ -277,6 +277,14 @@ def generate_m3u(sorted_channels):
     # 对频道进行排序
     sorted_channel_names = sorted(sorted_channels.keys(), key=get_channel_sort_key)
     
+    # 分组名称映射
+    category_names = {
+        "CCTV": "央视频道",
+        "卫视": "卫视频道",
+        "数字": "数字频道",
+        "其他": "其他频道"
+    }
+    
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         f.write("#EXTM3U\n")
         f.write(f"# 更新时间: {current_time}\n")
@@ -290,7 +298,14 @@ def generate_m3u(sorted_channels):
             if not category_channels:
                 continue
             
-            f.write(f"\n# ========== {category}频道 ==========\n")
+            display_name = category_names.get(category, category)
+            
+            # 央视频道上方添加更新时间
+            if category == "CCTV":
+                f.write(f"\n# ========== {display_name} ==========\n")
+                f.write(f"# 更新时间: {current_time}\n\n")
+            else:
+                f.write(f"\n# ========== {display_name} ==========\n")
             
             for channel_name in category_channels:
                 sources = sorted_channels[channel_name]
@@ -308,7 +323,7 @@ def generate_m3u(sorted_channels):
                     tvg_id = str(abs(hash(channel_name)) % 10000)
                     logo_url = get_logo_url(channel_name)
                     
-                    extinf = f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{channel_name}" tvg-logo="{logo_url}" group-title="{category}",{channel_name}'
+                    extinf = f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{channel_name}" tvg-logo="{logo_url}" group-title="{display_name}",{channel_name}'
                     f.write(extinf + '\n')
                     f.write(numbered_url + '\n')
                     f.write(f"# 质量分: {source['quality_score']} | 速度: {source['speed']:.1f}KB/s | 首字节: {source['first_byte']:.2f}s\n")
