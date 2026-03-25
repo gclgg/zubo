@@ -12,7 +12,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0      # 拉取完整历史，便于 rebase
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -30,17 +30,18 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # 拉取远程最新代码
-          git pull --rebase origin main
-          
-          # 添加更改
+          # 先添加更改
           git add zubo_iptv_sorted.m3u
           
-          # 检查是否有变更
+          # 检查是否有变更需要提交
           if ! git diff --staged --quiet; then
+            # 先提交到本地
             git commit -m "Auto-update stable IPTV sources $(date +'%Y-%m-%d %H:%M:%S')"
-            # 再次拉取确保是最新
+            
+            # 拉取远程最新代码并变基
             git pull --rebase origin main
+            
+            # 推送到远程
             git push origin main
             echo "✅ 已推送更新"
           else
