@@ -1,267 +1,285 @@
 #EXTM3U
-# 更新时间: 2026-06-15 02:51:56
+# 更新时间: 2026-06-15 11:47:52
 # 总频道数: 77
-# 总有效线路数: 65
+# 总有效线路数: 74
 # 筛选标准: 测试5秒, 最低速度500KB/s
 
 
 # ========== 央视频道 ==========
-# 更新时间: 2026-06-15 02:51:56
+# 更新时间: 2026-06-15 11:47:52
 
 
 # 频道: CCTV1
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="3673" tvg-name="CCTV1" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV1.png" group-title="央视频道",CCTV1
+#EXTINF:-1 tvg-id="9862" tvg-name="CCTV1" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV1.png" group-title="央视频道",CCTV1
 http://58.19.32.207:4022/rtp/239.254.96.96:8550『线路1』
-# 质量分: 974 | 速度: 671.6KB/s | 首字节: 0.53s
+# 质量分: 979 | 速度: 844.6KB/s | 首字节: 0.43s
 
 # 频道: CCTV2
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="2320" tvg-name="CCTV2" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV2.png" group-title="央视频道",CCTV2
+#EXTINF:-1 tvg-id="405" tvg-name="CCTV2" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV2.png" group-title="央视频道",CCTV2
 http://58.19.32.207:4022/rtp/239.69.1.102:10250『线路1』
-# 质量分: 974 | 速度: 666.7KB/s | 首字节: 0.53s
+# 质量分: 979 | 速度: 850.9KB/s | 首字节: 0.43s
 
 # 频道: CCTV3
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="3528" tvg-name="CCTV3" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV3.png" group-title="央视频道",CCTV3
+#EXTINF:-1 tvg-id="7599" tvg-name="CCTV3" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV3.png" group-title="央视频道",CCTV3
 http://58.19.32.207:4022/rtp/239.69.1.122:10370『线路1』
-# 质量分: 975 | 速度: 657.9KB/s | 首字节: 0.51s
+# 质量分: 978 | 速度: 794.7KB/s | 首字节: 0.45s
 
 # 频道: CCTV4
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="6243" tvg-name="CCTV4" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV4.png" group-title="央视频道",CCTV4
+#EXTINF:-1 tvg-id="5146" tvg-name="CCTV4" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV4.png" group-title="央视频道",CCTV4
 http://58.19.32.207:4022/rtp/239.69.1.138:10466『线路1』
-# 质量分: 972 | 速度: 622.0KB/s | 首字节: 0.56s
+# 质量分: 979 | 速度: 820.3KB/s | 首字节: 0.44s
 
 # 频道: CCTV5
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="7259" tvg-name="CCTV5" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV5.png" group-title="央视频道",CCTV5
+#EXTINF:-1 tvg-id="6950" tvg-name="CCTV5" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV5.png" group-title="央视频道",CCTV5
 http://58.19.32.207:4022/rtp/239.69.1.123:10376『线路1』
-# 质量分: 976 | 速度: 660.2KB/s | 首字节: 0.49s
+# 质量分: 980 | 速度: 814.3KB/s | 首字节: 0.41s
 
 # 频道: CCTV5+
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="1105" tvg-name="CCTV5+" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV5Plus.png" group-title="央视频道",CCTV5+
+#EXTINF:-1 tvg-id="1844" tvg-name="CCTV5+" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV5Plus.png" group-title="央视频道",CCTV5+
 http://58.19.32.207:4022/rtp/239.254.96.234:9484『线路1』
-# 质量分: 974 | 速度: 636.3KB/s | 首字节: 0.53s
+# 质量分: 979 | 速度: 848.5KB/s | 首字节: 0.43s
 
 # 频道: CCTV6
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="5279" tvg-name="CCTV6" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV6.png" group-title="央视频道",CCTV6
+#EXTINF:-1 tvg-id="4094" tvg-name="CCTV6" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV6.png" group-title="央视频道",CCTV6
 http://58.19.32.207:4022/rtp/239.69.1.124:10382『线路1』
-# 质量分: 975 | 速度: 716.7KB/s | 首字节: 0.51s
+# 质量分: 979 | 速度: 845.9KB/s | 首字节: 0.44s
 
 # 频道: CCTV7
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="1065" tvg-name="CCTV7" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV7.png" group-title="央视频道",CCTV7
+#EXTINF:-1 tvg-id="2866" tvg-name="CCTV7" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV7.png" group-title="央视频道",CCTV7
 http://58.19.32.207:4022/rtp/239.69.1.103:10256『线路1』
-# 质量分: 972 | 速度: 610.7KB/s | 首字节: 0.58s
+# 质量分: 979 | 速度: 849.4KB/s | 首字节: 0.43s
 
 # 频道: CCTV8
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="2541" tvg-name="CCTV8" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV8.png" group-title="央视频道",CCTV8
+#EXTINF:-1 tvg-id="4915" tvg-name="CCTV8" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV8.png" group-title="央视频道",CCTV8
 http://58.19.32.207:4022/rtp/239.69.1.125:10388『线路1』
-# 质量分: 974 | 速度: 668.7KB/s | 首字节: 0.52s
+# 质量分: 979 | 速度: 834.1KB/s | 首字节: 0.43s
 
 # 频道: CCTV9
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="1067" tvg-name="CCTV9" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV9.png" group-title="央视频道",CCTV9
+#EXTINF:-1 tvg-id="1876" tvg-name="CCTV9" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV9.png" group-title="央视频道",CCTV9
 http://58.19.32.207:4022/rtp/239.69.1.104:10262『线路1』
-# 质量分: 975 | 速度: 668.0KB/s | 首字节: 0.52s
+# 质量分: 979 | 速度: 834.9KB/s | 首字节: 0.43s
 
 # 频道: CCTV10
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="8605" tvg-name="CCTV10" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV10.png" group-title="央视频道",CCTV10
+#EXTINF:-1 tvg-id="2595" tvg-name="CCTV10" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV10.png" group-title="央视频道",CCTV10
 http://58.19.32.207:4022/rtp/239.69.1.105:10268『线路1』
-# 质量分: 973 | 速度: 690.1KB/s | 首字节: 0.55s
+# 质量分: 980 | 速度: 847.6KB/s | 首字节: 0.42s
 
 # 频道: CCTV11
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="9989" tvg-name="CCTV11" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV11.png" group-title="央视频道",CCTV11
+#EXTINF:-1 tvg-id="9875" tvg-name="CCTV11" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV11.png" group-title="央视频道",CCTV11
 http://58.19.32.207:4022/rtp/239.69.1.154:10560『线路1』
-# 质量分: 975 | 速度: 681.9KB/s | 首字节: 0.52s
+# 质量分: 979 | 速度: 841.4KB/s | 首字节: 0.44s
 
 # 频道: CCTV12
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="4147" tvg-name="CCTV12" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV12.png" group-title="央视频道",CCTV12
+#EXTINF:-1 tvg-id="6311" tvg-name="CCTV12" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV12.png" group-title="央视频道",CCTV12
 http://58.19.32.207:4022/rtp/239.69.1.106:10274『线路1』
-# 质量分: 974 | 速度: 649.2KB/s | 首字节: 0.53s
+# 质量分: 979 | 速度: 822.4KB/s | 首字节: 0.43s
 
 # 频道: CCTV13
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="4054" tvg-name="CCTV13" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV13.png" group-title="央视频道",CCTV13
+#EXTINF:-1 tvg-id="4377" tvg-name="CCTV13" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV13.png" group-title="央视频道",CCTV13
 http://58.19.32.207:4022/rtp/239.254.96.161:9040『线路1』
-# 质量分: 972 | 速度: 664.3KB/s | 首字节: 0.58s
+# 质量分: 978 | 速度: 832.5KB/s | 首字节: 0.44s
 
 # 频道: CCTV14
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="2245" tvg-name="CCTV14" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV14.png" group-title="央视频道",CCTV14
+#EXTINF:-1 tvg-id="619" tvg-name="CCTV14" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV14.png" group-title="央视频道",CCTV14
 http://58.19.32.207:4022/rtp/239.69.1.107:10280『线路1』
-# 质量分: 972 | 速度: 678.4KB/s | 首字节: 0.57s
+# 质量分: 979 | 速度: 819.1KB/s | 首字节: 0.43s
 
 # 频道: CCTV15
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="2170" tvg-name="CCTV15" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV15.png" group-title="央视频道",CCTV15
+#EXTINF:-1 tvg-id="1391" tvg-name="CCTV15" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV15.png" group-title="央视频道",CCTV15
 http://58.19.32.207:4022/rtp/239.69.1.155:10566『线路1』
-# 质量分: 972 | 速度: 649.0KB/s | 首字节: 0.56s
+# 质量分: 978 | 速度: 842.4KB/s | 首字节: 0.45s
+
+# 频道: CCTV16
+# 可用线路数: 1
+#EXTINF:-1 tvg-id="7244" tvg-name="CCTV16" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV16.png" group-title="央视频道",CCTV16
+http://58.19.32.207:4022/rtp/239.69.1.247:11124『线路1』
+# 质量分: 979 | 速度: 815.5KB/s | 首字节: 0.44s
+
+# 频道: CCTV17
+# 可用线路数: 1
+#EXTINF:-1 tvg-id="1227" tvg-name="CCTV17" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV17.png" group-title="央视频道",CCTV17
+http://58.19.32.207:4022/rtp/239.69.1.152:10548『线路1』
+# 质量分: 979 | 速度: 804.1KB/s | 首字节: 0.44s
+
+# 频道: CCTV4K
+# 可用线路数: 1
+#EXTINF:-1 tvg-id="2311" tvg-name="CCTV4K" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV4.png" group-title="央视频道",CCTV4K
+http://58.19.32.207:4022/rtp/239.69.1.12:9712『线路1』
+# 质量分: 979 | 速度: 823.5KB/s | 首字节: 0.43s
 
 # 频道: CCTV4欧洲
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="1782" tvg-name="CCTV4欧洲" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV4.png" group-title="央视频道",CCTV4欧洲
+#EXTINF:-1 tvg-id="2754" tvg-name="CCTV4欧洲" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV4.png" group-title="央视频道",CCTV4欧洲
 http://58.19.32.207:4022/rtp/239.69.1.231:11028『线路1』
-# 质量分: 974 | 速度: 684.6KB/s | 首字节: 0.54s
+# 质量分: 979 | 速度: 850.7KB/s | 首字节: 0.43s
 
 # 频道: CCTV4美洲
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="9740" tvg-name="CCTV4美洲" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV4.png" group-title="央视频道",CCTV4美洲
+#EXTINF:-1 tvg-id="8433" tvg-name="CCTV4美洲" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/CCTV4.png" group-title="央视频道",CCTV4美洲
 http://58.19.32.207:4022/rtp/239.69.1.232:11034『线路1』
-# 质量分: 975 | 速度: 676.1KB/s | 首字节: 0.52s
+# 质量分: 978 | 速度: 818.3KB/s | 首字节: 0.45s
 
 # ========== 卫视频道 ==========
 
 # 频道: 湖南卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="7568" tvg-name="湖南卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Hunan.png" group-title="卫视频道",湖南卫视
+#EXTINF:-1 tvg-id="9598" tvg-name="湖南卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Hunan.png" group-title="卫视频道",湖南卫视
 http://58.19.32.207:4022/rtp/239.254.96.139:8908『线路1』
-# 质量分: 973 | 速度: 635.1KB/s | 首字节: 0.56s
+# 质量分: 979 | 速度: 828.9KB/s | 首字节: 0.43s
 
 # 频道: 浙江卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="3333" tvg-name="浙江卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Zhejiang.png" group-title="卫视频道",浙江卫视
+#EXTINF:-1 tvg-id="3355" tvg-name="浙江卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Zhejiang.png" group-title="卫视频道",浙江卫视
 http://58.19.32.207:4022/rtp/239.254.96.143:8932『线路1』
-# 质量分: 972 | 速度: 606.1KB/s | 首字节: 0.56s
+# 质量分: 979 | 速度: 823.5KB/s | 首字节: 0.43s
 
 # 频道: 江苏卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="1522" tvg-name="江苏卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Jiangsu.png" group-title="卫视频道",江苏卫视
+#EXTINF:-1 tvg-id="376" tvg-name="江苏卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Jiangsu.png" group-title="卫视频道",江苏卫视
 http://58.19.32.207:4022/rtp/239.254.96.144:8938『线路1』
-# 质量分: 970 | 速度: 657.4KB/s | 首字节: 0.61s
+# 质量分: 980 | 速度: 850.7KB/s | 首字节: 0.42s
 
 # 频道: 东方卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="7063" tvg-name="东方卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/DragonTV.png" group-title="卫视频道",东方卫视
+#EXTINF:-1 tvg-id="3327" tvg-name="东方卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/DragonTV.png" group-title="卫视频道",东方卫视
 http://58.19.32.207:4022/rtp/239.254.96.142:8926『线路1』
-# 质量分: 975 | 速度: 719.8KB/s | 首字节: 0.51s
+# 质量分: 979 | 速度: 821.9KB/s | 首字节: 0.43s
 
 # 频道: 北京卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="6050" tvg-name="北京卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Beijing.png" group-title="卫视频道",北京卫视
+#EXTINF:-1 tvg-id="3157" tvg-name="北京卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Beijing.png" group-title="卫视频道",北京卫视
 http://58.19.32.207:4022/rtp/239.254.96.141:8920『线路1』
-# 质量分: 974 | 速度: 728.9KB/s | 首字节: 0.53s
+# 质量分: 979 | 速度: 832.7KB/s | 首字节: 0.44s
 
 # 频道: 广东卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="5934" tvg-name="广东卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Guangdong.png" group-title="卫视频道",广东卫视
+#EXTINF:-1 tvg-id="4127" tvg-name="广东卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Guangdong.png" group-title="卫视频道",广东卫视
 http://58.19.32.207:4022/rtp/239.254.96.140:8914『线路1』
-# 质量分: 975 | 速度: 721.2KB/s | 首字节: 0.51s
+# 质量分: 980 | 速度: 856.6KB/s | 首字节: 0.41s
 
 # 频道: 深圳卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="4401" tvg-name="深圳卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Shenzhen.png" group-title="卫视频道",深圳卫视
+#EXTINF:-1 tvg-id="6986" tvg-name="深圳卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Shenzhen.png" group-title="卫视频道",深圳卫视
 http://58.19.32.207:4022/rtp/239.254.96.137:8896『线路1』
-# 质量分: 974 | 速度: 691.2KB/s | 首字节: 0.52s
+# 质量分: 978 | 速度: 811.8KB/s | 首字节: 0.45s
 
 # 频道: 天津卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="7099" tvg-name="天津卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Tianjin.png" group-title="卫视频道",天津卫视
+#EXTINF:-1 tvg-id="9309" tvg-name="天津卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Tianjin.png" group-title="卫视频道",天津卫视
 http://58.19.32.207:4022/rtp/239.69.1.68:10048『线路1』
-# 质量分: 975 | 速度: 715.5KB/s | 首字节: 0.51s
+# 质量分: 979 | 速度: 818.1KB/s | 首字节: 0.42s
 
 # 频道: 山东卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="3780" tvg-name="山东卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Shandong.png" group-title="卫视频道",山东卫视
+#EXTINF:-1 tvg-id="3134" tvg-name="山东卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Shandong.png" group-title="卫视频道",山东卫视
 http://58.19.32.207:4022/rtp/239.69.1.69:10054『线路1』
-# 质量分: 974 | 速度: 659.6KB/s | 首字节: 0.54s
+# 质量分: 979 | 速度: 809.9KB/s | 首字节: 0.43s
 
 # 频道: 安徽卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="1518" tvg-name="安徽卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Anhui.png" group-title="卫视频道",安徽卫视
+#EXTINF:-1 tvg-id="5081" tvg-name="安徽卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Anhui.png" group-title="卫视频道",安徽卫视
 http://58.19.32.207:4022/rtp/239.69.1.70:10060『线路1』
-# 质量分: 973 | 速度: 707.2KB/s | 首字节: 0.54s
+# 质量分: 979 | 速度: 793.6KB/s | 首字节: 0.42s
 
 # 频道: 辽宁卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="7761" tvg-name="辽宁卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Liaoning.png" group-title="卫视频道",辽宁卫视
+#EXTINF:-1 tvg-id="646" tvg-name="辽宁卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Liaoning.png" group-title="卫视频道",辽宁卫视
 http://58.19.32.207:4022/rtp/239.69.1.71:10066『线路1』
-# 质量分: 974 | 速度: 724.4KB/s | 首字节: 0.53s
+# 质量分: 980 | 速度: 823.4KB/s | 首字节: 0.41s
 
 # 频道: 黑龙江卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="7563" tvg-name="黑龙江卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Heilongjiang.png" group-title="卫视频道",黑龙江卫视
+#EXTINF:-1 tvg-id="8333" tvg-name="黑龙江卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Heilongjiang.png" group-title="卫视频道",黑龙江卫视
 http://58.19.32.207:4022/rtp/239.254.96.138:8902『线路1』
-# 质量分: 974 | 速度: 661.6KB/s | 首字节: 0.54s
+# 质量分: 979 | 速度: 833.6KB/s | 首字节: 0.42s
 
 # 频道: 四川卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="1469" tvg-name="四川卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Sichuan.png" group-title="卫视频道",四川卫视
+#EXTINF:-1 tvg-id="6051" tvg-name="四川卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Sichuan.png" group-title="卫视频道",四川卫视
 http://58.19.32.207:4022/rtp/239.69.1.169:10650『线路1』
-# 质量分: 973 | 速度: 674.5KB/s | 首字节: 0.55s
+# 质量分: 979 | 速度: 846.8KB/s | 首字节: 0.43s
 
 # 频道: 重庆卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="7137" tvg-name="重庆卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Chongqing.png" group-title="卫视频道",重庆卫视
+#EXTINF:-1 tvg-id="5655" tvg-name="重庆卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Chongqing.png" group-title="卫视频道",重庆卫视
 http://58.19.32.207:4022/rtp/239.69.1.149:10530『线路1』
-# 质量分: 974 | 速度: 664.2KB/s | 首字节: 0.54s
+# 质量分: 979 | 速度: 842.2KB/s | 首字节: 0.43s
 
 # 频道: 河南卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="3382" tvg-name="河南卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Henan.png" group-title="卫视频道",河南卫视
+#EXTINF:-1 tvg-id="7824" tvg-name="河南卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Henan.png" group-title="卫视频道",河南卫视
 http://58.19.32.207:4022/rtp/239.69.1.168:10644『线路1』
-# 质量分: 973 | 速度: 675.8KB/s | 首字节: 0.55s
+# 质量分: 978 | 速度: 799.0KB/s | 首字节: 0.44s
 
 # 频道: 湖北卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="6813" tvg-name="湖北卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Hubei.png" group-title="卫视频道",湖北卫视
+#EXTINF:-1 tvg-id="5632" tvg-name="湖北卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Hubei.png" group-title="卫视频道",湖北卫视
 http://58.19.32.207:4022/rtp/239.254.96.115:8664『线路1』
-# 质量分: 974 | 速度: 666.0KB/s | 首字节: 0.54s
+# 质量分: 980 | 速度: 843.7KB/s | 首字节: 0.41s
 
 # 频道: 江西卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="7271" tvg-name="江西卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Jiangxi.png" group-title="卫视频道",江西卫视
+#EXTINF:-1 tvg-id="4101" tvg-name="江西卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Jiangxi.png" group-title="卫视频道",江西卫视
 http://58.19.32.207:4022/rtp/239.69.1.126:10394『线路1』
-# 质量分: 974 | 速度: 695.8KB/s | 首字节: 0.53s
+# 质量分: 979 | 速度: 850.4KB/s | 首字节: 0.43s
 
 # 频道: 东南卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="132" tvg-name="东南卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Southeast.png" group-title="卫视频道",东南卫视
+#EXTINF:-1 tvg-id="7483" tvg-name="东南卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Southeast.png" group-title="卫视频道",东南卫视
 http://58.19.32.207:4022/rtp/239.69.1.108:10286『线路1』
-# 质量分: 975 | 速度: 713.0KB/s | 首字节: 0.51s
+# 质量分: 978 | 速度: 837.9KB/s | 首字节: 0.44s
 
 # 频道: 广西卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="6515" tvg-name="广西卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Guangxi.png" group-title="卫视频道",广西卫视
+#EXTINF:-1 tvg-id="1709" tvg-name="广西卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Guangxi.png" group-title="卫视频道",广西卫视
 http://58.19.32.207:4022/rtp/239.69.1.191:10788『线路1』
-# 质量分: 974 | 速度: 661.6KB/s | 首字节: 0.53s
+# 质量分: 978 | 速度: 841.5KB/s | 首字节: 0.45s
 
 # 频道: 贵州卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="2818" tvg-name="贵州卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Guizhou.png" group-title="卫视频道",贵州卫视
+#EXTINF:-1 tvg-id="9883" tvg-name="贵州卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Guizhou.png" group-title="卫视频道",贵州卫视
 http://58.19.32.207:4022/rtp/239.69.1.150:10536『线路1』
-# 质量分: 974 | 速度: 713.4KB/s | 首字节: 0.53s
+# 质量分: 979 | 速度: 824.7KB/s | 首字节: 0.43s
 
 # 频道: 吉林卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="3881" tvg-name="吉林卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Jilin.png" group-title="卫视频道",吉林卫视
+#EXTINF:-1 tvg-id="7300" tvg-name="吉林卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Jilin.png" group-title="卫视频道",吉林卫视
 http://58.19.32.207:4022/rtp/239.69.1.212:10914『线路1』
-# 质量分: 972 | 速度: 681.3KB/s | 首字节: 0.56s
+# 质量分: 979 | 速度: 817.1KB/s | 首字节: 0.44s
 
 # 频道: 海南卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="2745" tvg-name="海南卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Hainan.png" group-title="卫视频道",海南卫视
+#EXTINF:-1 tvg-id="5854" tvg-name="海南卫视" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Hainan.png" group-title="卫视频道",海南卫视
 http://58.19.32.207:4022/rtp/239.69.1.151:10542『线路1』
-# 质量分: 974 | 速度: 718.1KB/s | 首字节: 0.52s
+# 质量分: 978 | 速度: 794.7KB/s | 首字节: 0.45s
 
 # 频道: 卡酷少儿
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="8419" tvg-name="卡酷少儿" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Kaku.png" group-title="卫视频道",卡酷少儿
+#EXTINF:-1 tvg-id="7237" tvg-name="卡酷少儿" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Kaku.png" group-title="卫视频道",卡酷少儿
 http://58.19.32.207:4022/rtp/239.69.1.193:10800『线路1』
-# 质量分: 974 | 速度: 698.9KB/s | 首字节: 0.53s
+# 质量分: 978 | 速度: 843.8KB/s | 首字节: 0.44s
 
 # 频道: 金鹰卡通
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="2067" tvg-name="金鹰卡通" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Jinying.png" group-title="卫视频道",金鹰卡通
+#EXTINF:-1 tvg-id="2379" tvg-name="金鹰卡通" tvg-logo="https://gcore.jsdelivr.net/gh/yuanzl77/TVlogo@master/png/Jinying.png" group-title="卫视频道",金鹰卡通
 http://58.19.32.207:4022/rtp/239.69.1.248:11130『线路1』
-# 质量分: 975 | 速度: 712.8KB/s | 首字节: 0.52s
+# 质量分: 979 | 速度: 788.7KB/s | 首字节: 0.43s
 
 # ========== 数字频道 ==========
 
@@ -269,138 +287,174 @@ http://58.19.32.207:4022/rtp/239.69.1.248:11130『线路1』
 
 # 频道: CHC动作电影
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="9103" tvg-name="CHC动作电影" tvg-logo="" group-title="其他频道",CHC动作电影
+#EXTINF:-1 tvg-id="2806" tvg-name="CHC动作电影" tvg-logo="" group-title="其他频道",CHC动作电影
 http://58.19.32.207:4022/rtp/239.69.1.242:11094『线路1』
-# 质量分: 972 | 速度: 660.8KB/s | 首字节: 0.56s
+# 质量分: 980 | 速度: 825.2KB/s | 首字节: 0.41s
 
 # 频道: CHC家庭影院
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="6021" tvg-name="CHC家庭影院" tvg-logo="" group-title="其他频道",CHC家庭影院
+#EXTINF:-1 tvg-id="1266" tvg-name="CHC家庭影院" tvg-logo="" group-title="其他频道",CHC家庭影院
 http://58.19.32.207:4022/rtp/239.69.1.243:11100『线路1』
-# 质量分: 973 | 速度: 670.4KB/s | 首字节: 0.55s
+# 质量分: 979 | 速度: 796.0KB/s | 首字节: 0.43s
 
 # 频道: CHC影迷电影
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="8097" tvg-name="CHC影迷电影" tvg-logo="" group-title="其他频道",CHC影迷电影
+#EXTINF:-1 tvg-id="2277" tvg-name="CHC影迷电影" tvg-logo="" group-title="其他频道",CHC影迷电影
 http://58.19.32.207:4022/rtp/239.69.1.241:11088『线路1』
-# 质量分: 975 | 速度: 740.9KB/s | 首字节: 0.52s
+# 质量分: 979 | 速度: 839.2KB/s | 首字节: 0.43s
+
+# 频道: 世界地理
+# 可用线路数: 1
+#EXTINF:-1 tvg-id="2522" tvg-name="世界地理" tvg-logo="" group-title="其他频道",世界地理
+http://58.19.32.207:4022/rtp/239.69.1.91:10186『线路1』
+# 质量分: 979 | 速度: 865.6KB/s | 首字节: 0.43s
 
 # 频道: 中国教育1台
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="3624" tvg-name="中国教育1台" tvg-logo="" group-title="其他频道",中国教育1台
+#EXTINF:-1 tvg-id="5675" tvg-name="中国教育1台" tvg-logo="" group-title="其他频道",中国教育1台
 http://58.19.32.207:4022/rtp/239.69.1.110:10298『线路1』
-# 质量分: 973 | 速度: 661.5KB/s | 首字节: 0.56s
+# 质量分: 978 | 速度: 830.1KB/s | 首字节: 0.44s
+
+# 频道: 兵器科技
+# 可用线路数: 1
+#EXTINF:-1 tvg-id="4284" tvg-name="兵器科技" tvg-logo="" group-title="其他频道",兵器科技
+http://58.19.32.207:4022/rtp/239.69.1.79:10114『线路1』
+# 质量分: 979 | 速度: 825.1KB/s | 首字节: 0.44s
+
+# 频道: 央视台球
+# 可用线路数: 1
+#EXTINF:-1 tvg-id="8803" tvg-name="央视台球" tvg-logo="" group-title="其他频道",央视台球
+http://58.19.32.207:4022/rtp/239.69.1.98:10224『线路1』
+# 质量分: 978 | 速度: 810.2KB/s | 首字节: 0.45s
 
 # 频道: 快乐垂钓
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="4982" tvg-name="快乐垂钓" tvg-logo="" group-title="其他频道",快乐垂钓
+#EXTINF:-1 tvg-id="8246" tvg-name="快乐垂钓" tvg-logo="" group-title="其他频道",快乐垂钓
 http://58.19.32.207:4022/rtp/239.69.1.142:10488『线路1』
-# 质量分: 974 | 速度: 727.8KB/s | 首字节: 0.53s
+# 质量分: 979 | 速度: 847.1KB/s | 首字节: 0.43s
 
 # 频道: 房县综合
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="2385" tvg-name="房县综合" tvg-logo="" group-title="其他频道",房县综合
+#EXTINF:-1 tvg-id="4063" tvg-name="房县综合" tvg-logo="" group-title="其他频道",房县综合
 http://58.19.32.207:4022/rtp/239.69.1.192:10794『线路1』
-# 质量分: 974 | 速度: 761.5KB/s | 首字节: 0.53s
+# 质量分: 979 | 速度: 890.5KB/s | 首字节: 0.43s
 
 # 频道: 梨园频道
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="9512" tvg-name="梨园频道" tvg-logo="" group-title="其他频道",梨园频道
+#EXTINF:-1 tvg-id="8340" tvg-name="梨园频道" tvg-logo="" group-title="其他频道",梨园频道
 http://58.19.32.207:4022/rtp/239.69.1.33:9838『线路1』
-# 质量分: 974 | 速度: 705.6KB/s | 首字节: 0.52s
+# 质量分: 980 | 速度: 833.4KB/s | 首字节: 0.42s
 
 # 频道: 武术世界
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="7436" tvg-name="武术世界" tvg-logo="" group-title="其他频道",武术世界
+#EXTINF:-1 tvg-id="7133" tvg-name="武术世界" tvg-logo="" group-title="其他频道",武术世界
 http://58.19.32.207:4022/rtp/239.69.1.47:9922『线路1』
-# 质量分: 973 | 速度: 667.7KB/s | 首字节: 0.54s
+# 质量分: 979 | 速度: 810.4KB/s | 首字节: 0.43s
 
 # 频道: 武汉教育频道
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="2127" tvg-name="武汉教育频道" tvg-logo="" group-title="其他频道",武汉教育频道
+#EXTINF:-1 tvg-id="4262" tvg-name="武汉教育频道" tvg-logo="" group-title="其他频道",武汉教育频道
 http://58.19.32.207:4022/rtp/239.69.1.60:9994『线路1』
-# 质量分: 974 | 速度: 673.2KB/s | 首字节: 0.53s
+# 质量分: 978 | 速度: 791.9KB/s | 首字节: 0.44s
 
 # 频道: 武汉新闻综合
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="4730" tvg-name="武汉新闻综合" tvg-logo="" group-title="其他频道",武汉新闻综合
+#EXTINF:-1 tvg-id="525" tvg-name="武汉新闻综合" tvg-logo="" group-title="其他频道",武汉新闻综合
 http://58.19.32.207:4022/rtp/239.69.1.145:10506『线路1』
-# 质量分: 974 | 速度: 689.0KB/s | 首字节: 0.53s
+# 质量分: 979 | 速度: 843.2KB/s | 首字节: 0.43s
 
 # 频道: 武汉电视剧
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="3971" tvg-name="武汉电视剧" tvg-logo="" group-title="其他频道",武汉电视剧
+#EXTINF:-1 tvg-id="3248" tvg-name="武汉电视剧" tvg-logo="" group-title="其他频道",武汉电视剧
 http://58.19.32.207:4022/rtp/239.69.1.146:10512『线路1』
-# 质量分: 973 | 速度: 666.8KB/s | 首字节: 0.56s
+# 质量分: 979 | 速度: 865.0KB/s | 首字节: 0.43s
 
 # 频道: 武汉科技生活
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="8523" tvg-name="武汉科技生活" tvg-logo="" group-title="其他频道",武汉科技生活
+#EXTINF:-1 tvg-id="7832" tvg-name="武汉科技生活" tvg-logo="" group-title="其他频道",武汉科技生活
 http://58.19.32.207:4022/rtp/239.69.1.251:11148『线路1』
-# 质量分: 975 | 速度: 708.8KB/s | 首字节: 0.51s
+# 质量分: 979 | 速度: 836.6KB/s | 首字节: 0.44s
 
 # 频道: 河北卫视
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="6306" tvg-name="河北卫视" tvg-logo="" group-title="其他频道",河北卫视
+#EXTINF:-1 tvg-id="9109" tvg-name="河北卫视" tvg-logo="" group-title="其他频道",河北卫视
 http://58.19.32.207:4022/rtp/239.254.96.113:9616『线路1』
-# 质量分: 974 | 速度: 678.6KB/s | 首字节: 0.53s
+# 质量分: 978 | 速度: 837.3KB/s | 首字节: 0.44s
 
 # 频道: 湖北公共新闻
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="9075" tvg-name="湖北公共新闻" tvg-logo="" group-title="其他频道",湖北公共新闻
+#EXTINF:-1 tvg-id="4473" tvg-name="湖北公共新闻" tvg-logo="" group-title="其他频道",湖北公共新闻
 http://58.19.32.207:4022/rtp/239.69.1.40:9880『线路1』
-# 质量分: 974 | 速度: 719.9KB/s | 首字节: 0.53s
+# 质量分: 979 | 速度: 805.6KB/s | 首字节: 0.43s
 
 # 频道: 湖北垄上频道
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="1147" tvg-name="湖北垄上频道" tvg-logo="" group-title="其他频道",湖北垄上频道
+#EXTINF:-1 tvg-id="1471" tvg-name="湖北垄上频道" tvg-logo="" group-title="其他频道",湖北垄上频道
 http://58.19.32.207:4022/rtp/239.69.1.43:9898『线路1』
-# 质量分: 973 | 速度: 662.0KB/s | 首字节: 0.55s
+# 质量分: 979 | 速度: 811.0KB/s | 首字节: 0.43s
 
 # 频道: 湖北影视频道
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="4608" tvg-name="湖北影视频道" tvg-logo="" group-title="其他频道",湖北影视频道
+#EXTINF:-1 tvg-id="8033" tvg-name="湖北影视频道" tvg-logo="" group-title="其他频道",湖北影视频道
 http://58.19.32.207:4022/rtp/239.69.1.204:10866『线路1』
-# 质量分: 974 | 速度: 691.1KB/s | 首字节: 0.52s
+# 质量分: 980 | 速度: 812.4KB/s | 首字节: 0.42s
 
 # 频道: 湖北教育频道
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="3917" tvg-name="湖北教育频道" tvg-logo="" group-title="其他频道",湖北教育频道
+#EXTINF:-1 tvg-id="1783" tvg-name="湖北教育频道" tvg-logo="" group-title="其他频道",湖北教育频道
 http://58.19.32.207:4022/rtp/239.69.1.206:10878『线路1』
-# 质量分: 974 | 速度: 676.1KB/s | 首字节: 0.53s
+# 质量分: 979 | 速度: 790.6KB/s | 首字节: 0.43s
 
 # 频道: 湖北生活频道
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="8158" tvg-name="湖北生活频道" tvg-logo="" group-title="其他频道",湖北生活频道
+#EXTINF:-1 tvg-id="4259" tvg-name="湖北生活频道" tvg-logo="" group-title="其他频道",湖北生活频道
 http://58.19.32.207:4022/rtp/239.69.1.205:10872『线路1』
-# 质量分: 974 | 速度: 663.6KB/s | 首字节: 0.53s
+# 质量分: 979 | 速度: 818.7KB/s | 首字节: 0.42s
 
 # 频道: 湖北经视频道
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="6069" tvg-name="湖北经视频道" tvg-logo="" group-title="其他频道",湖北经视频道
+#EXTINF:-1 tvg-id="201" tvg-name="湖北经视频道" tvg-logo="" group-title="其他频道",湖北经视频道
 http://58.19.32.207:4022/rtp/239.69.1.41:9886『线路1』
-# 质量分: 974 | 速度: 694.0KB/s | 首字节: 0.54s
+# 质量分: 979 | 速度: 786.8KB/s | 首字节: 0.43s
 
 # 频道: 湖北综合频道
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="2172" tvg-name="湖北综合频道" tvg-logo="" group-title="其他频道",湖北综合频道
+#EXTINF:-1 tvg-id="7058" tvg-name="湖北综合频道" tvg-logo="" group-title="其他频道",湖北综合频道
 http://58.19.32.207:4022/rtp/239.69.1.42:9892『线路1』
-# 质量分: 973 | 速度: 656.8KB/s | 首字节: 0.54s
+# 质量分: 979 | 速度: 814.9KB/s | 首字节: 0.44s
+
+# 频道: 第一剧场
+# 可用线路数: 1
+#EXTINF:-1 tvg-id="6912" tvg-name="第一剧场" tvg-logo="" group-title="其他频道",第一剧场
+http://58.19.32.207:4022/rtp/239.69.1.74:10084『线路1』
+# 质量分: 978 | 速度: 809.2KB/s | 首字节: 0.44s
 
 # 频道: 蔡甸综合
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="3556" tvg-name="蔡甸综合" tvg-logo="" group-title="其他频道",蔡甸综合
+#EXTINF:-1 tvg-id="3222" tvg-name="蔡甸综合" tvg-logo="" group-title="其他频道",蔡甸综合
 http://58.19.32.207:4022/rtp/239.69.1.245:11112『线路1』
-# 质量分: 975 | 速度: 719.1KB/s | 首字节: 0.52s
+# 质量分: 979 | 速度: 841.6KB/s | 首字节: 0.43s
 
 # 频道: 金鹰纪实
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="8043" tvg-name="金鹰纪实" tvg-logo="" group-title="其他频道",金鹰纪实
+#EXTINF:-1 tvg-id="5690" tvg-name="金鹰纪实" tvg-logo="" group-title="其他频道",金鹰纪实
 http://58.19.32.207:4022/rtp/239.69.1.109:10292『线路1』
-# 质量分: 974 | 速度: 683.1KB/s | 首字节: 0.53s
+# 质量分: 979 | 速度: 816.4KB/s | 首字节: 0.44s
 
 # 频道: 阳新综合
 # 可用线路数: 1
-#EXTINF:-1 tvg-id="9249" tvg-name="阳新综合" tvg-logo="" group-title="其他频道",阳新综合
+#EXTINF:-1 tvg-id="8420" tvg-name="阳新综合" tvg-logo="" group-title="其他频道",阳新综合
 http://58.19.32.207:4022/rtp/239.69.1.34:9844『线路1』
-# 质量分: 974 | 速度: 675.8KB/s | 首字节: 0.53s
+# 质量分: 979 | 速度: 814.4KB/s | 首字节: 0.44s
+
+# 频道: 风云足球
+# 可用线路数: 1
+#EXTINF:-1 tvg-id="7115" tvg-name="风云足球" tvg-logo="" group-title="其他频道",风云足球
+http://58.19.32.207:4022/rtp/239.69.1.81:10126『线路1』
+# 质量分: 978 | 速度: 834.2KB/s | 首字节: 0.45s
+
+# 频道: 高尔夫网球
+# 可用线路数: 1
+#EXTINF:-1 tvg-id="8220" tvg-name="高尔夫网球" tvg-logo="" group-title="其他频道",高尔夫网球
+http://58.19.32.207:4022/rtp/239.69.1.83:10138『线路1』
+# 质量分: 979 | 速度: 834.6KB/s | 首字节: 0.44s
