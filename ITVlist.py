@@ -280,7 +280,7 @@ async def main():
         beijing_now = datetime.datetime.now(
             datetime.timezone(datetime.timedelta(hours=8))
         ).strftime("%Y-%m-%d %H:%M:%S")
-        disclaimer_url = "http://kakaxi.indevs.in/LOGO/Disclaimer.mp4"
+        disclaimer_url = "https://logo.gcl.de5.net/mp4/你看那远山.mp4"
 
         with open("itvlist.txt", 'w', encoding='utf-8') as f:
             f.write(f"更新时间: {beijing_now}（北京时间）\n\n")
